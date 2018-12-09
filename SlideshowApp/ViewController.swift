@@ -118,8 +118,9 @@ class ViewController: UIViewController {
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //EnlargedViewControllerを取得
     let enlargedViewController :EnlargedViewController = segue.destination as! EnlargedViewController
-        //遷移先のkariImageにスライドショーの画像の名前を代入
+        //遷移先のkariNameにスライドショーの画像の名前を代入
         enlargedViewController.kariName = nameOfImageView
+        //遷移先に画像を管理する配列を作る
         enlargedViewController.imageCollection = self.imageCollection
     }
     
