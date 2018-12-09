@@ -12,11 +12,12 @@ class EnlargedViewController: UIViewController {
    
     
     @IBOutlet weak var enlargedImageView: UIImageView!
-                   var kariImage:UIImage!
+                   var kariName: String!
+                   var imageCollection: Array<String>!
     override func viewDidLoad() {
         super.viewDidLoad()
         //enlargedImageに画像を代入
-        enlargedImageView.image = kariImage
+        enlargedImageView.image = UIImage(named: kariName)
         
         // Do any additional setup after loading the view.
     }
@@ -29,8 +30,8 @@ class EnlargedViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //ViewControllerを取得
         let  viewController: ViewController = segue.destination as! ViewController
-        //遷移先のkariImage2に拡大図のイメージを代入
-        viewController.kariImage2 = enlargedImageView.image
+        //遷移先のkariName2に拡大図の画像の名前を代入
+        viewController.kariName2 = kariName
     }
         /*
     // MARK: - Navigation

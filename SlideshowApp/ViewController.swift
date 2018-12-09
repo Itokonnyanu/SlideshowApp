@@ -93,20 +93,20 @@ class ViewController: UIViewController {
         }
     }
         //
-    var kariImage2: UIImage!
+    var kariName2: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //タップジェスチャーを有効にする。
         tapView.isUserInteractionEnabled = true
-        //EnlargedViewControllerから画像を受け取っていなければ初期画像を代入
-        if kariImage2 == nil{
+        //はじめの画像の名前を代入
         nameOfImageView = imageCollection[0]
-            tapView.image = UIImage(named: nameOfImageView)
-        }else{
-            tapView.image = kariImage2
-            
+        //遷移されて来ていればの遷移時の画像の名前を代入
+        if kariName2 != nil{
+            nameOfImageView = kariName2
         }
+        //画像の表示
+        tapView.image = UIImage(named: nameOfImageView)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -119,7 +119,8 @@ class ViewController: UIViewController {
         //EnlargedViewControllerを取得
     let enlargedViewController :EnlargedViewController = segue.destination as! EnlargedViewController
         //遷移先のkariImageにスライドショーの画像の名前を代入
-        enlargedViewController.kariImage = tapView.image!
+        enlargedViewController.kariName = nameOfImageView
+        enlargedViewController.imageCollection = self.imageCollection
     }
     
 
