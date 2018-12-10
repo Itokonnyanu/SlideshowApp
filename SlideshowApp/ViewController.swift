@@ -92,19 +92,16 @@ class ViewController: UIViewController {
             slideShowButton.setTitle("スタート", for: .normal)
         }
     }
-        //
-    var kariName2: String!
     
+       //Exitの呼び出し元に設定
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         //タップジェスチャーを有効にする。
         tapView.isUserInteractionEnabled = true
         //はじめの画像の名前を代入
         nameOfImageView = imageCollection[0]
-        //遷移されて来ていればの遷移時の画像の名前を代入
-        if kariName2 != nil{
-            nameOfImageView = kariName2
-        }
         //画像の表示
         tapView.image = UIImage(named: nameOfImageView)
         // Do any additional setup after loading the view, typically from a nib.
@@ -116,12 +113,21 @@ class ViewController: UIViewController {
     }
 
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //タイマーが動いていれば停止
+    if timer !== nil{
+        self.timer.invalidate()
+        timer = nil
+        //進む、戻るボタンの有効
+        returnButton.isEnabled = true
+        nextButton.isEnabled = true
+        //ボタンの文字を「スタート」に
+        slideShowButton.setTitle("スタート", for: .normal)
+    }
         //EnlargedViewControllerを取得
     let enlargedViewController :EnlargedViewController = segue.destination as! EnlargedViewController
-        //遷移先のkariNameにスライドショーの画像の名前を代入
-        enlargedViewController.kariName = nameOfImageView
-        //遷移先に画像を管理する配列を作る
-        enlargedViewController.imageCollection = self.imageCollection
+        //遷移先のkariImageにスライドショーの画像を代入
+        enlargedViewController.kariImage = tapView.image
+    
     }
     
 

@@ -114,7 +114,7 @@
                                 </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="BIG-yc-qHD"/>
+                                    <segue destination="iWp-32-1Ah" kind="unwind" unwindAction="unwind:" id="a9t-uX-LLf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -133,6 +133,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwe-RM-oR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="iWp-32-1Ah" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1055.072463768116" y="52.989130434782609"/>
         </scene>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770FF89221BEB8B100B29FC7 /* 201706060095_top_img_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 770FF89121BEB8B000B29FC7 /* 201706060095_top_img_A.jpg */; };
+		770FF89421BEB8C400B29FC7 /* etna_strom02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 770FF89321BEB8C400B29FC7 /* etna_strom02.jpg */; };
+		770FF89621BEB8CD00B29FC7 /* kilauea-volcao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 770FF89521BEB8CD00B29FC7 /* kilauea-volcao.jpg */; };
+		770FF89821BEB8D600B29FC7 /* Klyuchevskaya_crop_l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 770FF89721BEB8D600B29FC7 /* Klyuchevskaya_crop_l.jpg */; };
 		77B9A2B421BCD2F600BBEE75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B9A2B321BCD2F600BBEE75 /* AppDelegate.swift */; };
 		77B9A2B621BCD2F600BBEE75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B9A2B521BCD2F600BBEE75 /* ViewController.swift */; };
 		77B9A2BB21BCD2F800BBEE75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B9A2BA21BCD2F800BBEE75 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		770FF89121BEB8B000B29FC7 /* 201706060095_top_img_A.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 201706060095_top_img_A.jpg; sourceTree = "<group>"; };
+		770FF89321BEB8C400B29FC7 /* etna_strom02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = etna_strom02.jpg; sourceTree = "<group>"; };
+		770FF89521BEB8CD00B29FC7 /* kilauea-volcao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kilauea-volcao.jpg"; sourceTree = "<group>"; };
+		770FF89721BEB8D600B29FC7 /* Klyuchevskaya_crop_l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Klyuchevskaya_crop_l.jpg; sourceTree = "<group>"; };
 		77B9A2B021BCD2F600BBEE75 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B9A2B321BCD2F600BBEE75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77B9A2B521BCD2F600BBEE75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +69,10 @@
 				77B9A2CD21BCF58400BBEE75 /* EnlargedViewController.swift */,
 				77B9A2CF21BCF78100BBEE75 /* Main.storyboard */,
 				77B9A2BA21BCD2F800BBEE75 /* Assets.xcassets */,
+				770FF89121BEB8B000B29FC7 /* 201706060095_top_img_A.jpg */,
+				770FF89321BEB8C400B29FC7 /* etna_strom02.jpg */,
+				770FF89521BEB8CD00B29FC7 /* kilauea-volcao.jpg */,
+				770FF89721BEB8D600B29FC7 /* Klyuchevskaya_crop_l.jpg */,
 				77B9A2BC21BCD2F800BBEE75 /* LaunchScreen.storyboard */,
 				77B9A2BF21BCD2F800BBEE75 /* Info.plist */,
 			);
@@ -126,8 +138,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B9A2D021BCF78100BBEE75 /* Main.storyboard in Resources */,
+				770FF89821BEB8D600B29FC7 /* Klyuchevskaya_crop_l.jpg in Resources */,
 				77B9A2BE21BCD2F800BBEE75 /* LaunchScreen.storyboard in Resources */,
 				77B9A2BB21BCD2F800BBEE75 /* Assets.xcassets in Resources */,
+				770FF89421BEB8C400B29FC7 /* etna_strom02.jpg in Resources */,
+				770FF89621BEB8CD00B29FC7 /* kilauea-volcao.jpg in Resources */,
+				770FF89221BEB8B100B29FC7 /* 201706060095_top_img_A.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
